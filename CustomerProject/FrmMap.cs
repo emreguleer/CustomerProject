@@ -20,6 +20,13 @@ namespace CustomerProject
         private void btnOpenCityForm_Click(object sender, EventArgs e)
         {
             FrmCity frmCity = new FrmCity();
+            frmCity.Show();
+        }
+
+        private void btnOpenCustomerForm_Click(object sender, EventArgs e)
+        {
+            FrmCustomer frmCustomer = new FrmCustomer();
+            frmCustomer.Show();
         }
     }
 }

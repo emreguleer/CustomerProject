@@ -51,10 +51,11 @@
             this.btnOpenCustomerForm.TabIndex = 1;
             this.btnOpenCustomerForm.Text = "Müşteri İşlemleri";
             this.btnOpenCustomerForm.UseVisualStyleBackColor = true;
+            this.btnOpenCustomerForm.Click += new System.EventHandler(this.btnOpenCustomerForm_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(126, 239);
+            this.btnExit.Location = new System.Drawing.Point(126, 222);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(206, 56);
             this.btnExit.TabIndex = 2;
@@ -70,6 +71,7 @@
             this.Controls.Add(this.btnOpenCustomerForm);
             this.Controls.Add(this.btnOpenCityForm);
             this.Name = "FrmMap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formlar";
             this.ResumeLayout(false);
 

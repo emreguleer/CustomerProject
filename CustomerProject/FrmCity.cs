@@ -11,26 +11,11 @@ using System.Windows.Forms;
 
 namespace CustomerProject
 {
-    public partial class cityProcessForm : Form
+    public partial class FrmCity : Form
     {
-        public cityProcessForm()
+        public FrmCity()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
         SqlConnection conn = new SqlConnection("Server=Desktop-17CL2RN;initial catalog=CustomerDb;integrated security=true");
         private void button1_Click(object sender, EventArgs e)
