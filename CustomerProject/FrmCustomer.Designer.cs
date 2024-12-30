@@ -43,7 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCustomerBalance = new System.Windows.Forms.TextBox();
             this.cmbCity = new System.Windows.Forms.ComboBox();
             this.rdbActive = new System.Windows.Forms.RadioButton();
             this.rdbPassive = new System.Windows.Forms.RadioButton();
@@ -68,6 +68,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -77,6 +78,7 @@
             this.btnDelete.TabIndex = 23;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -86,6 +88,7 @@
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtCustomerId
             // 
@@ -180,12 +183,12 @@
             this.label7.TabIndex = 29;
             this.label7.Text = "Şehir";
             // 
-            // textBox3
+            // txtCustomerBalance
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 32;
+            this.txtCustomerBalance.Location = new System.Drawing.Point(113, 108);
+            this.txtCustomerBalance.Name = "txtCustomerBalance";
+            this.txtCustomerBalance.Size = new System.Drawing.Size(179, 20);
+            this.txtCustomerBalance.TabIndex = 32;
             // 
             // cmbCity
             // 
@@ -237,7 +240,7 @@
             this.Controls.Add(this.rdbPassive);
             this.Controls.Add(this.rdbActive);
             this.Controls.Add(this.cmbCity);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCustomerBalance);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -255,6 +258,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCustomer";
             this.Text = "Müşteri Formu";
+            this.Load += new System.EventHandler(this.FrmCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -278,7 +282,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCustomerBalance;
         private System.Windows.Forms.ComboBox cmbCity;
         private System.Windows.Forms.RadioButton rdbActive;
         private System.Windows.Forms.RadioButton rdbPassive;

@@ -52,7 +52,7 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Şehir Id:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // txtCityId
             // 
@@ -105,7 +105,7 @@
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Ülke:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // txtCityName
             // 
@@ -185,7 +185,7 @@
             this.Name = "FrmCity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şehir Bilgi Formu";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
