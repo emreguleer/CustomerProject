@@ -16,7 +16,7 @@ namespace CustomerProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new cityProcessForm());
+            Application.Run(new FrmMap());
         }
     }
 }
